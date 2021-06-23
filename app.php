@@ -2,15 +2,7 @@
 require_once "config.php";
 require_once "funcs.php";
 
-if(isset($_GET['reset'])){
-    $protokol = $_SERVER['REQUEST_SCHEME'];
-    if($protokol != "https"){
-        echo "Xatolik, So'rov HTTPS protokolida bo'lishi shart !<br> SSl sertifekat kerak domainga !";
-    }else{
-        echo $webhook_url = "https://api.telegram.org/bot".API_KEY."/setWebHook?url=".$protokol."://".$_SERVER['HTTP_HOST']."".$_SERVER['SCRIPT_NAME'];
-    };
-    dump(reformat(file_get_contents($webhook_url)));
-};
+bot_manager();
 
 $update = json_decode(file_get_contents('php://input'));
 
