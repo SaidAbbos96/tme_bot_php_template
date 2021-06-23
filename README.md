@@ -1,0 +1,1 @@
+PHP dasturlash tilida yoziladigan tgram botlar uchun kichik maket + boshlang'ich funksiyalar bn birgalikda
