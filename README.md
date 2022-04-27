@@ -1,1 +1,1 @@
-#PHP template for telegram bots
+# PHP templates for telegram bots
