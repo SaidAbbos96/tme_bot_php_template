@@ -1,0 +1,37 @@
+{
+    "update_id": 694106427,
+    "message": {
+        "message_id": 839,
+        "from": {
+            "id": 713516566,
+            "is_bot": false,
+            "first_name": "BIG",
+            "last_name": "BOSS",
+            "username": "official_black_programmer",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -1001797419694,
+            "title": "Bu guruh title",
+            "username": "supergrop_api",
+            "type": "supergroup"
+        },
+        "date": 1651050203,
+        "left_chat_participant": {
+            "id": 150105698,
+            "is_bot": false,
+            "first_name": "SaidAbbos",
+            "last_name": "Khudoykulov",
+            "username": "SaidAbbos_Khudoykulov_Official",
+            "language_code": "ru"
+        },
+        "left_chat_member": {
+            "id": 150105698,
+            "is_bot": false,
+            "first_name": "SaidAbbos",
+            "last_name": "Khudoykulov",
+            "username": "SaidAbbos_Khudoykulov_Official",
+            "language_code": "ru"
+        }
+    }
+}
