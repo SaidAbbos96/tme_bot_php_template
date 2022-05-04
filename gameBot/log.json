@@ -1,0 +1,82 @@
+{
+    "update_id": 694106568,
+    "callback_query": {
+        "id": "2916898050876917348",
+        "from": {
+            "id": 679143250,
+            "is_bot": false,
+            "first_name": "XXXXXXX",
+            "last_name": ":*)",
+            "username": "Yulduzingmang0808",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 2175,
+            "from": {
+                "id": 5366289252,
+                "is_bot": true,
+                "first_name": "infomir a[pi dars",
+                "username": "apiim4848bot"
+            },
+            "chat": {
+                "id": 679143250,
+                "first_name": "XXXXXXX",
+                "last_name": ":*)",
+                "username": "Yulduzingmang0808",
+                "type": "private"
+            },
+            "date": 1651663586,
+            "game": {
+                "title": "Mevalar kartasi \u270c\ufe0f",
+                "description": "Kartalar ostidagi bir hil rasmlarni toping va ballarga ega bo'ling !",
+                "photo": [
+                    {
+                        "file_id": "AgACAgQAAxUAAWJyYuKpJkjth1BmQ8c_WrowOKPaAAJCtzEb07aIU0WAMAGsHhHQAQADAgADcwADJAQ",
+                        "file_unique_id": "AQADQrcxG9O2iFN4",
+                        "file_size": 1400,
+                        "width": 90,
+                        "height": 51
+                    },
+                    {
+                        "file_id": "AgACAgQAAxUAAWJyYuKpJkjth1BmQ8c_WrowOKPaAAJCtzEb07aIU0WAMAGsHhHQAQADAgADbQADJAQ",
+                        "file_unique_id": "AQADQrcxG9O2iFNy",
+                        "file_size": 13328,
+                        "width": 320,
+                        "height": 180
+                    },
+                    {
+                        "file_id": "AgACAgQAAxUAAWJyYuKpJkjth1BmQ8c_WrowOKPaAAJCtzEb07aIU0WAMAGsHhHQAQADAgADeAADJAQ",
+                        "file_unique_id": "AQADQrcxG9O2iFN9",
+                        "file_size": 32207,
+                        "width": 640,
+                        "height": 360
+                    }
+                ]
+            },
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Mevalar kartasi \u270c\ufe0f",
+                            "callback_game": []
+                        }
+                    ],
+                    [
+                        {
+                            "text": "Do'stlarni taklif qilish \ud83d\udc6d",
+                            "url": "https:\/\/t.me\/share\/url?url=https:\/\/t.me\/apiim4848bot&text=\ud83e\udd29\ud83e\udd73%20Salom,%20biz%20o'yin%20boshladik%20siz%20ham%20bizga%20qo'shiling%20?!"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "Konkurs",
+                            "url": "https:\/\/www.youtube.com\/watch?v=rE3P97A8yDY"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-8720919978625670541",
+        "game_short_name": "cards"
+    }
+}

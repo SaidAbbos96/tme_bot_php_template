@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url(img/bg.jpg) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+.memory-card:active {
+    -webkit-transform: scale(.97);
+    -ms-transform: scale(.97);
+    transform: scale(.97);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+.memory-card.flip {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__end {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 500px;
+    height: 80vh;
+    max-height: 550px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.start_image {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.popup__title {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.popup__text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.discounts {
+    padding-top: 5px;
+}
+
+.discount {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.level__hard {
+    width: 60px;
+    margin-left: 30px;
+    background-color: rgba(199, 12, 0, 0.91);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    transform: translateY(-2px);
+}
+
+.level__medium {
+    width: 60px;
+    margin-left: 30px;
+    background-color: rgba(116, 215, 1, 0.91);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    transform: translateY(-2px);
+}
+
+.level__easy {
+    width: 60px;
+    margin-left: 30px;
+    background-color: rgba(217, 239, 1, 0.96);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    transform: translateY(-2px);
+}
+
+.play_button {
+    margin-top: 30px;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-decoration: none;
+    background-color: black;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.popup__start {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.play {
+    padding-left: 20px;
+}
+
+.score__now {
+    font-size: 20px;
+    height: 20px;
+    width: 0;
+    transform: translateX(calc(50vw - 25px));
+    z-index: 1;
+}
+
+.benefit__text,
+.prize,
+.score {
+    font-size: 20px;
+    padding-left: 20px;
+    background: aqua;
+}
+
+.benefit {
+    font-size: 25px;
+    padding-left: 20px;
+    color: white;
+    background: rgba(36, 36, 36, 0.79);
+}
+
+.popup__restart {
+    margin-left: 15px;
+    color: #274580;
+    font-size: 35px;
+}
+
+@media (max-width: 470px) {
+    .memory-card {
+        width: calc(33.333% - 10px);
+        height: calc(25% - 10px);
+        margin: 5px;
+        position: relative;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform .5s;
+        transition: -webkit-transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+        transition: transform .5s, -webkit-transform .5s;
+    }
+}
+
+@media (max-height: 330px),
+(max-height: 570px) {
+    .popup__title {
+        font-size: 25px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+    .popup__text {
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .play_button {
+        margin-top: 0px;
+        height: 45px;
+    }
+    .popup__start {
+        padding-top: 3px;
+    }
+}

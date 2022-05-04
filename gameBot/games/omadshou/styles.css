@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.game__box {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 5px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px 9px #d7d6c9ad;
+    border-radius: 20px;
+}
+
+.game__app {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+img.game__wheel {
+    width: 300px;
+    margin: 25px auto 0;
+    transition-duration: 5s;
+    transform: rotate(0deg);
+}
+
+img.game__arrow {
+    position: absolute;
+    width: 60px;
+    transform: rotate(225deg);
+    left: 40px;
+    top: 5px;
+}
+
+p.game__gift {
+    margin: 15px;
+    background: antiquewhite;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.game__btns {
+    text-align: center;
+    margin: 30px 0;
+}
+
+button.game__start {
+    border: none;
+    outline: none;
+    background: crimson;
+    color: wheat;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+    animation-duration: 0.5s;
+}
+
+button.game__start[disabled] {
+    background: gray !important;
+    cursor: not-allowed !important;
+}
