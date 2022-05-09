@@ -1,0 +1,43 @@
+{
+    "update_id": 340802544,
+    "message": {
+        "message_id": 173,
+        "from": {
+            "id": 679143250,
+            "is_bot": false,
+            "first_name": "XXXXXXX",
+            "last_name": ":*)",
+            "username": "Yulduzingmang0808",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 679143250,
+            "first_name": "XXXXXXX",
+            "last_name": ":*)",
+            "username": "Yulduzingmang0808",
+            "type": "private"
+        },
+        "date": 1652088202,
+        "successful_payment": {
+            "currency": "RUB",
+            "total_amount": 13642,
+            "invoice_payload": "order_id=2",
+            "shipping_option_id": "simple_ship",
+            "order_info": {
+                "name": "SaidAbbos Khudoykulov",
+                "phone_number": "998944760450",
+                "email": "yangi.dasturchi@mail.me",
+                "shipping_address": {
+                    "country_code": "UZ",
+                    "state": "Samarqand v.5",
+                    "city": "Samarqand sh.",
+                    "street_line1": "Katta ko'cha 15 a.",
+                    "street_line2": "Orienbter: Agrobank Amir Temur filiali",
+                    "post_code": "654321-15"
+                }
+            },
+            "telegram_payment_charge_id": "5333539303_679143250_5729_7095663362292149616",
+            "provider_payment_charge_id": "2a0af148-000f-5000-9000-13d18f09b5f5"
+        }
+    }
+}

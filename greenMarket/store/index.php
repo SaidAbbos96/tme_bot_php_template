@@ -1,14 +1,6 @@
 <?
 require_once "../config.php";
 require_once "../funcs.php";
-// if(isset($_POST['login_btn']) && $_POST['password']){
-//     if(trim($_POST['password']) == $system_pass){
-//         $_SESSION['pass'] = $system_pass;
-//     }else{
-//         $error = "Xatolik, parol xato kiritilgan !";
-//     };
-// };
-// dump($GLOBALS);
 ?>
 <!DOCTYPE html>
 <html lang="uz">
@@ -522,6 +514,7 @@ require_once "../funcs.php";
                     'color': "#F4D03F",
                     'text_color': "#6C3483",
                 })
+                // mainButton.hide();
             }
         })
     });

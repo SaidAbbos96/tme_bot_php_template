@@ -31,7 +31,7 @@ if(isset($request['user']) && isset($request['orderPrice'])){
         //     'need_phone_number' => true,
         //     'need_email' => true,
         //     'need_shipping_address' => true,
-        //     'send_phone_number_to_provider' => true,
+        //     // 'send_phone_number_to_provider' => true,
         //     'is_flexible' => true,
         //     'reply_markup' => json_encode([
         //         'inline_keyboard' => [
@@ -95,7 +95,6 @@ if(isset($request['user']) && isset($request['orderPrice'])){
         $products = [];
         foreach ($request['orderData'] as $product) {
             $price = intval(round(($product['price'] * 100) / $kurs_rub));
-            // $price = 35*100;
             array_push($products,[
                 'label' => $product['title'],
                 'amount' => $price,

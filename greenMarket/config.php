@@ -4,7 +4,7 @@ date_default_timezone_set('Asia/Tashkent');
 
 define('API_KEY','5333539303:AAE5Otq0DMKSMEe-3s_paphhyf0kcZxoTT8');
 // admin akkounti id raqamini ushbu bot orqali bilishingiz mumkin @infomiruz_idbot
-$admin = "6791432520";
+$admin = "679143250";
 $system_pass = "123";
 // $kurs_rub = 140;
 $logging = true; //false

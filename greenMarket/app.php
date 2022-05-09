@@ -70,7 +70,7 @@ if($chat_type == "private" && $chat_id != $admin){
         $hi_text = "😎 Salom admin, ishlayapmiz !";
         bot('sendmessage', [
             'chat_id' => $chat_id,
-            'text' =>$hi_text."\n\n".bot_info(),
+            'text' => $hi_text."\n\n".bot_info(),
             'parse_mode' => 'HTML',
             'reply_markup' => json_encode([
                 'inline_keyboard' => [
