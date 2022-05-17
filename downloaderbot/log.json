@@ -1,0 +1,30 @@
+{
+    "update_id": 322243057,
+    "message": {
+        "message_id": 119,
+        "from": {
+            "id": 679143250,
+            "is_bot": false,
+            "first_name": "XXXXXXX",
+            "last_name": ":*)",
+            "username": "Yulduzingmang0808",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 679143250,
+            "first_name": "XXXXXXX",
+            "last_name": ":*)",
+            "username": "Yulduzingmang0808",
+            "type": "private"
+        },
+        "date": 1652818254,
+        "text": "\/files",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 6,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
