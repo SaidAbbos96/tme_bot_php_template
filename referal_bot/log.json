@@ -1,0 +1,30 @@
+{
+    "update_id": 860058930,
+    "message": {
+        "message_id": 565,
+        "from": {
+            "id": 150105698,
+            "is_bot": false,
+            "first_name": "SaidAbbos",
+            "last_name": "Khudoykulov",
+            "username": "SaidAbbos_Khudoykulov_Official",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 150105698,
+            "first_name": "SaidAbbos",
+            "last_name": "Khudoykulov",
+            "username": "SaidAbbos_Khudoykulov_Official",
+            "type": "private"
+        },
+        "date": 1653330792,
+        "text": "\/start BONUS=679143250__app=AgADMAwAAqiWYFA",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 6,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
