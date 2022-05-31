@@ -1,0 +1,17 @@
+{
+    "update_id": 49498555,
+    "inline_query": {
+        "id": "2916898050346085581",
+        "from": {
+            "id": 679143250,
+            "is_bot": false,
+            "first_name": "Infomiruz",
+            "last_name": "neger bacha :*)",
+            "username": "infomir_working",
+            "language_code": "ru"
+        },
+        "chat_type": "supergroup",
+        "query": "videolar",
+        "offset": ""
+    }
+}
