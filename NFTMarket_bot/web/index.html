@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Market - Most popular NFT Tokens.</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <!-- telegram -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<style>
+    .container {
+        padding: 0;
+    }
+
+    .tab-title {
+        padding: 20px;
+    }
+
+    .col-4.product>img {
+        width: max-content;
+        display: block;
+        margin: 0 auto 10px;
+        max-width: inherit;
+        /* border-radius: 50%; */
+    }
+
+    .col-4.product {
+        text-align: center;
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    span.price-badge {
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+    }
+
+    span.badge.rounded-pill.bg-danger.cart-sum,
+    .checkout-sum {
+        font-size: xx-small;
+    }
+
+    .tab-pane>h2 {
+        margin: 20px auto 30px;
+    }
+
+    div#staticBackdrop {
+        background: #000000cf;
+        transition-duration: 1s;
+    }
+
+    div[role="tabpanel"] {
+        padding: 0 10px;
+    }
+
+    .cart-thumps {
+        width: 80px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs animate__animated animate__fadeInDown" id="nav-tab" role="tablist">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-store" type="button"
+                    role="tab"><i class="fa-solid fa-store"></i> NFT Market</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-orders" type="button" role="tab"><i
+                        class="fa-solid fa-list"></i> History</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-checkout" type="button" role="tab"><i
+                        class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge rounded-pill bg-danger cart-sum"> 0</span>
+                </button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-store" role="tabpanel">
+                <h2 class="animate__animated animate__fadeInUp text-center tab-title">NFT Tokens</h2>
+                <div class="row product-list">
+                    <!-- product -->
+                    <div class="col-12 product animate__animated animate__fadeInUp">
+                        Products not found !
+                    </div>
+                    <!-- product -->
+                </div>
+
+            </div>
+            <div class="tab-pane fade show" id="nav-orders" role="tabpanel">
+                <h2 class="animate__animated animate__fadeInUp text-center tab-title">Orders history</h2>
+                <div class="row">
+                    <!-- list -->
+                    <div class="col-12 product animate__animated animate__fadeInUp">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">NFT N: 9528</div>
+                                    Paying success with paypal. (04.02.2021)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">90 ETH</span>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-12">
+                        <pre id="logbox"></pre>
+                    </div>
+                    <!-- list -->
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="nav-checkout" role="tabpanel">
+                <h2 class="animate__animated animate__fadeInUp text-center tab-title">Cart list
+                    <span class="btn btn-danger bg-danger checkout-clear"><i
+                            class="fa-solid fa-trash-arrow-up"></i></span>
+                </h2>
+                <div class="row">
+                    <div class="col-12 product animate__animated animate__fadeInUp">
+                        <ul class="list-group cart-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">Products not
+                                found !</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- product -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title <span
+                            class="badge rounded-pill bg-danger">0.00 sum.</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <script>
+        const telegram = window.Telegram.WebApp
+        const telegramData = telegram.initDataUnsafe
+        if (Object.keys(telegramData).length === 0 || typeof telegramData.user === 'undefined') {
+            // document.querySelector("body").innerText =
+            //     "Xatolik, faqat @im_NFTmarket_bot ichida xizmat ko'rsatadi !";
+            // window.location.href = "https://mproweb.uz/";
+        } else {
+            telegram.expand()
+            document.querySelector("#logbox").innerText = JSON.stringify(telegram, null, 4)
+        }
+        const themeParams = telegram.themeParams
+        const mainButton = telegram.MainButton
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function arrayShufle(array) {
+            return array.sort((a, b) => 0.5 - Math.random())
+        }
+        const kursUSD = 1458.49
+        let nftBase = [{
+            "name": "9112",
+            "img": "1.jpg",
+            "price": 0.95
+        }, {
+            "name": "219",
+            "img": "2.jpg",
+            "price": 0.86
+        }, {
+            "name": "218",
+            "img": "3.jpg",
+            "price": 1.1
+        }, {
+            "name": "3825",
+            "img": "4.jpg",
+            "price": 0.75
+        }, {
+            "name": "8520",
+            "img": "5.jpg",
+            "price": 0.46
+        }, {
+            "name": "9023",
+            "img": "6.jpg",
+            "price": 0.485
+        }, {
+            "name": "9996",
+            "img": "7.jpg",
+            "price": 0.91
+        }, {
+            "name": "6991",
+            "img": "8.jpg",
+            "price": 0.67
+        }, {
+            "name": "351",
+            "img": "9.jpg",
+            "price": 1.3
+        }, {
+            "name": "4560",
+            "img": "10.jpg",
+            "price": 2
+        }, {
+            "name": "823",
+            "img": "11.jpg",
+            "price": 0.86
+        }, {
+            "name": "687",
+            "img": "12.jpg",
+            "price": 0.35
+        }];
+        document.addEventListener("DOMContentLoaded", () => {
+            const productList = document.querySelector("div.product-list")
+
+            productList.innerHTML = ""
+            // console.log(arrayShufle(nftBase));
+            arrayShufle(nftBase).forEach(el => {
+                productList.innerHTML += `
+                    <div class="col-4 product animate__animated animate__fadeInUpBig">
+                        <img src="images/${el['img']}" alt="product">
+                        <div class="position-relative">
+                            <span class="badge rounded-pill bg-danger price-badge">${el['price']} ETH.</span>
+                        </div>
+                        <div class="btn-group btn-group-sm " role="group" data-product='${JSON.stringify(el)}'>
+                            <button type="button" class="btn btn-outline-info" data-rol="info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-info" data-rol="save">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-info" data-rol="buy">BUY</button>
+                        </div>
+                    </div>`;
+            })
+            const products = document.querySelectorAll(".product")
+            let i = 0
+            let printer = setInterval(() => {
+                let el = products[i]
+                i < products.length ? el.style.display = "block" : clearInterval(printer)
+                i++
+            }, 200)
+            cart()
+            const store = document.querySelectorAll(".btn-outline-info")
+            store.forEach(el => {
+                el.addEventListener("click", () => {
+                    // console.log(JSON.parse(el.parentElement.dataset.product));
+                    switch (el.dataset.rol) {
+                        case "info":
+                            showInfo(JSON.parse(el.parentElement.dataset.product))
+                            break
+                        case "save":
+                            saveProduct(JSON.parse(el.parentElement.dataset.product))
+                            break
+                        case "buy":
+                            cart({
+                                'add': JSON.parse(el.parentElement.dataset.product)
+                            })
+                            break
+                        default:
+                            break
+                    }
+                })
+            })
+            // checkout-clear
+            document.querySelector(".checkout-clear").addEventListener("click", () => {
+                cart({
+                    'clear': true
+                })
+            })
+        })
+
+        function cart(params = []) {
+            let cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : {}
+            if (params['add']) {
+                cart[params['add']['name']] = params['add']
+                localStorage.setItem("cart", JSON.stringify(cart));
+            } else if (params['remove']) {
+                delete cart[params['remove']]
+                localStorage.setItem("cart", JSON.stringify(cart));
+            } else if (params['clear']) {
+                cart = {};
+                localStorage.setItem("cart", "{}");
+            }
+            let totalSum = 0
+            const cartList = document.querySelector(".cart-list")
+            Object.values(cart).forEach((product, index) => {
+                if (index == 0) cartList.innerHTML = ""
+                totalSum += product.price
+                cartList.innerHTML += `
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2">
+                            <img src="images/${product.img}" alt="text" class="cart-thumps">
+                        </div>
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">NFT N: ${product.name}</div>
+                            <span class="small">${product.price} ETH ~ $${product.price * kursUSD}.</span>
+                        </div>
+                        <span class="badge bg-danger rounded-pill" onclick="cart({'remove': '${product.name}'})">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </span>
+                    </li>`
+
+            })
+            document.querySelector(".cart-sum").innerText = `${totalSum.toFixed(2)} ETH`
+            if (Object.keys(cart).length < 1) {
+                cartList.innerHTML =
+                    `<li class="list-group-item d-flex justify-content-between align-items-start">Products not found !</li>`
+                mainButton.hide();
+            } else {
+                mainButton.show();
+                mainButton.setParams({
+                    'text': 'Pay ' + (totalSum * kursUSD).toFixed(2) + ' USD.',
+                    'color': "#2ECC71",
+                    'text_color': "#F7F9F9"
+                })
+            }
+            return cart
+        }
+        const showInfo = (product) => {
+            document.querySelector("#exampleModalLabel").innerHTML =
+                `NFT: ${product.name} <span class="badge rounded-pill bg-danger">${product.price} ETH.</span>`
+        }
+        const saveProduct = (product) => {
+            console.log("Save in list of favorites !");
+        }
+
+        mainButton.onClick(() => {
+        // mainButton.showProgress();
+        let orderList = []
+        Object.values(cart()).forEach(product => {
+            orderList.push({
+                'label': product.name,
+                'amount': (product.price * kursUSD * 100).toFixed(0)
+            })
+        })
+        // console.log(orderList);
+        document.querySelector("#logbox").innerText = JSON.stringify(orderList, null, 4)
+        const BotToken = '5418286898:AAGfWkyf8bZdeFqe7aXi_r0KDadkFsnrq8Q'
+        let method = "sendInvoice"
+        axios.post(`https://api.telegram.org/bot${BotToken}/${method}`, {
+                'chat_id': telegramData.user.id,
+                'title': 'NFT MARKET BILLING SYSTEM.',
+                'description': 'The order is buying NFT tokens.',
+                'payload': "order_id=G3645",   
+                'provider_token': '284685063:TEST:YjJmZTU0OWQ0YTE3',
+                'currency': 'USD',
+                'max_tip_amount': 1000 * 100,
+                'prices': orderList,
+                'suggested_tip_amounts': [
+                    1 * 100, 5 * 100, 50 * 100, 100 * 100,
+                ],
+                'photo_url': "http://d2vrvpw63099lz.cloudfront.net/checkout-elements/checkout-boy.jpg",
+                'photo_width': 735,
+                'photo_height': 490,
+                'need_name': true,
+                'need_phone_number': true,
+                'need_email': true,
+                'need_shipping_address': true,
+                'is_flexible': true,
+                'reply_markup': {
+                    'inline_keyboard': [
+                        [{
+                            'text': "🎁 Pay with discount",
+                            'pay': true
+                        }],
+                        [{
+                            'text': "⭕️ Cancel pay",
+                            'callback_data': "pay||cancel"
+                        }],
+                        [{
+                            'text': "♻️ Back to NFT Market",
+                            'web_app': {
+                                'url': 'https://mproweb.uz/YTless/NFT_market/web/'
+                            }
+                        }]
+                    ]
+                },
+            })
+            .then(function (response) {
+                // console.log(response);
+                // document.querySelector("#logbox").innerText = JSON.stringify(response, null, 4)
+                if (response.data.result) telegram.close()
+            })
+            .catch(function (error) {
+                document.querySelector("#logbox").innerText = JSON.stringify(error, null, 4)
+                console.log(error);
+            });
+            axios.post(`https://api.telegram.org/bot${BotToken}/${method}`, {
+                'chat_id': telegramData.user.id,
+                'title': 'NFT MARKET BILLING SYSTEM.',
+                'description': 'The order is buying NFT tokens.',
+                'payload': "order_id=G3645",   
+                'provider_token': '284685063:TEST:YjJmZTU0OWQ0YTE3',
+                'currency': 'USD',
+                'provider_token': '381764678:TEST:38528',
+                'currency': 'RUB',
+                'max_tip_amount': 1000 * 100,
+                'prices': [
+                    {
+                        'label': "Product 1",
+                        'amount': 1500*100
+                    },
+                    {
+                        'label': "Product 2",
+                        'amount': 2500*100
+                    },
+                ],
+                'suggested_tip_amounts': [
+                    100 * 100, 500 * 100, 800 * 100, 1000 * 100,
+                ],
+                'photo_url': "http://d2vrvpw63099lz.cloudfront.net/checkout-elements/checkout-boy.jpg",
+                'photo_width': 735,
+                'photo_height': 490,
+                'need_name': true,
+                'need_phone_number': true,
+                'need_email': true,
+                'need_shipping_address': true,
+                'is_flexible': true,
+                'reply_markup': {
+                    'inline_keyboard': [
+                        [{
+                            'text': "🎁 Pay with discount",
+                            'pay': true
+                        }],
+                        [{
+                            'text': "⭕️ Cancel pay",
+                            'callback_data': "pay||cancel"
+                        }],
+                        [{
+                            'text': "♻️ Back to NFT Market",
+                            'web_app': {
+                                'url': 'https://mproweb.uz/YTless/NFT_market/web/'
+                            }
+                        }]
+                    ]
+                },
+            })
+            .then(function (response) {
+                // console.log(response);
+                // document.querySelector("#logbox").innerText = JSON.stringify(response, null, 4)
+                if (response.data.result) telegram.close()
+            })
+            .catch(function (error) {
+                document.querySelector("#logbox").innerText = JSON.stringify(error, null, 4)
+                console.log(error);
+            });
+        })
+        // const BotToken = '5418286898:AAGfWkyf8bZdeFqe7aXi_r0KDadkFsnrq8Q'
+        //     let method = "sendMessage"
+        //     axios.post(`https://api.telegram.org/bot${BotToken}/${method}`, {
+        //         'chat_id': 679143250,
+        //         'text': 'salom'
+        //     })
+        //     .then(function (response) {
+        //         console.log(response);
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     });
+    </script>
+</body>
+
+</html
