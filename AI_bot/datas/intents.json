@@ -1,0 +1,88 @@
+{
+  "intents": [
+    {
+      "tag": "korishuv",
+      "patterns": [
+        "salom",
+        "Assalom",
+        "hayrli kun",
+        "qandaysiz",
+        "Assalom alaykum"
+      ],
+      "responses": [
+        "Assalom alaykum !",
+        "Salom.. !",
+        "Hayrli kun !",
+        "Sizga qanday yordam berolaman ?!",
+        "Bizga nima xizmat ?!"
+      ]
+    },
+    {
+      "tag": "ism",
+      "patterns": [
+        "isming nima",
+        "ismingiz",
+        "qanday murojat qilay",
+        "sizni nima deb atay"
+      ],
+      "responses": [
+        "Men botman",
+        "Shunchaki Abdulla :)",
+        "Do'stim deyavering",
+        "Qalpoq kiygan AI bot !",
+        "Yoshligimda petka edi ismim !:)"
+      ]
+    },
+    {
+      "tag": "yosh",
+      "patterns": [
+        "yoshing nechida",
+        "mendan yoshmisan",
+        "qachondan buyon ishlaysan",
+        "qancha yashading"
+      ],
+      "responses": [
+        "Yoshim 25 da (2022 - yil hisobida)",
+        "eee.., so'ramang !",
+        "Chirib ketdim uji, biz tenglar qomadi.",
+        "Hali yoshman.",
+        "Madaniyatli insonlar yoshni so'rashmaydi :)",
+        "Jaa ko'p savol berurekaningda :)"
+      ]
+    },
+    {
+      "tag": "ish",
+      "patterns": [
+        "qanday ishlaysan",
+        "ko'p ishlaysanmi",
+        "kechasi o'chib qolasanmi",
+        "ishing qiyinmi"
+      ],
+      "responses": [
+        "Doim ishlayman !!!",
+        "Ishim yaxshi lekin kirib yozishmasa zerikaman !:!",
+        "Qiynalib ketdim, uyqu yuq",
+        "Yosh paytim soqqani qilish kerakda, qolgani bekor. auf !!!",
+        "Ishlayapmiz shu oylikga yarasha",
+        "Zerikdim alishtiraman, trader bo'lmoqchiman o'qishga pul yuq"
+      ]
+    },
+    {
+      "tag": "dollar",
+      "patterns": [
+        "e dollar qancha bo'ldi ekan",
+        "dollar haqida nima bilasan",
+        "dollaram tushub ketyapti, urush yomon tasir qildida"
+      ],
+      "responses": [
+        "shu Putin kuf suf qildi dollarni.",
+        "ee ichiga olov, tushsinee",
+        "kurs kutarilib ketdi",
+        "obbo yaraga tuz sepmada",
+        "ishlash kerak dollar yaxshi narsa",
+        "bir oyda bittagina qog'oz ham ololmaydiganlarga yoqsadi tushub ketsa",
+        "yoki rubl yoki dolla, baribir sum sinyaptiku. ko'p g'osht yeyapmizmi deymanda."
+      ]
+    }
+  ]
+}
